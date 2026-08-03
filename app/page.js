@@ -5,6 +5,7 @@ import mbbs from '../assets/mbbs-degree.jpg';
 import pmdc from '../assets/pmdc-license.jpg';
 import Faqs from "./components/faqs";
 import Navbar from "./components/navbar";
+import ConsultCTA from "./components/cta";
 const illnesses = [
     'Sore throat ',
     'Tonsillitis ',
@@ -178,6 +179,12 @@ export default function Home() {
                     </ol>
                 </div>
             </section>
+
+
+            <ConsultCTA
+
+                href="https://wa.me/923117907036"
+            />
             <Faqs />
 
 

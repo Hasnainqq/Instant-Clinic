@@ -20,7 +20,7 @@ export default function Navbar() {
             <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 lg:px-6">
                 {/* Logo */}
                 <Link href="/" className="text-xl font-bold text-slate-900">
-                    Dr. Hasnain Sikander
+                    Dr. Hasnain Online Clinic
                 </Link>
 
                 {/* Desktop links */}
