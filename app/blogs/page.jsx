@@ -4,11 +4,11 @@ import Image from "next/image";
 // Replace this with real posts — from a CMS, MDX files, or a database query.
 const posts = [
   {
-    slug: "fever-when-to-worry",
-    title: "Fever: When Should You Actually Worry?",
-    urduTitle: "بخار: آپ کو کب فکر مند ہونا چاہیے؟",
+    slug: "gastroenteritis-when-to-give-antibiotic",
+    title: "Gastroenteritis: When to Give Antibiotics and When to Avoid Them",
+    urduTitle: "گیسٹرو انٹریٹس: جب انتبیٹیکس دینے چاہئیں اور جب نہ دینے چاہئیں",
     excerpt:
-      "A simple guide to home care for fever, and the warning signs that mean it's time to see a doctor.",
+      "Learn when antibiotics are appropriate for gastroenteritis, when they should be avoided, and how to recognize bacterial diarrhea that may require treatment.",
     urduExcerpt:
       "بخار کی گھریلو دیکھ بھال کے لیے آسان رہنمائی، اور وہ علامات جن میں ڈاکٹر سے رجوع کرنا ضروری ہے۔",
     date: "2026-06-10",

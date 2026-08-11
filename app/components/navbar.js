@@ -94,7 +94,7 @@ export default function Navbar() {
                     ))}
 
                     <Link
-                        href="/consult"
+                        href="https://wa.me/923117907036"
                         onClick={() => setIsOpen(false)}
                         className="mt-2 rounded-full bg-blue-600 px-5 py-2 text-center text-sm font-semibold text-white shadow-sm transition-colors hover:bg-blue-700"
                     >
