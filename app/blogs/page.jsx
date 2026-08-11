@@ -4,15 +4,14 @@ import Image from "next/image";
 // Replace this with real posts — from a CMS, MDX files, or a database query.
 const posts = [
   {
-    slug: "gastroenteritis-when-to-give-antibiotic",
-    title: "Gastroenteritis: When to Give Antibiotics and When to Avoid Them",
-    urduTitle: "گیسٹرو انٹریٹس: جب انتبیٹیکس دینے چاہئیں اور جب نہ دینے چاہئیں",
+    slug: "gastroenteritis-viral-vs-bacterial",
+    title: "Gastroenteritis: Viral vs Bacterial",
+    urduTitle: "گیسٹرو انٹریٹس: وائرل سے باکٹریل",
     excerpt:
-      "Learn when antibiotics are appropriate for gastroenteritis, when they should be avoided, and how to recognize bacterial diarrhea that may require treatment.",
+      "Learn the key differences between viral and bacterial gastroenteritis, including symptoms, stool findings, and when antibiotics are actually appropriate.",
     urduExcerpt:
       "بخار کی گھریلو دیکھ بھال کے لیے آسان رہنمائی، اور وہ علامات جن میں ڈاکٹر سے رجوع کرنا ضروری ہے۔",
     date: "2026-06-10",
-    image: "/blogs/fever.jpg",
   },
   {
     slug: "online-consultation-guide",
@@ -77,14 +76,7 @@ export default function Blogs() {
               href={`/blogs/${post.slug}`}
               className="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm transition-shadow hover:shadow-md"
             >
-              <div className="relative h-44 w-full overflow-hidden bg-slate-200">
-                <Image
-                  src={post.image}
-                  alt={post.title}
-                  fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
+              
 
               <div className="flex flex-1 flex-col gap-2 p-5">
                 <span className="text-xs font-medium uppercase tracking-wide text-slate-400">
