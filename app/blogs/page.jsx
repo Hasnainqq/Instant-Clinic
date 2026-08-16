@@ -25,15 +25,13 @@ const posts = [
     image: "/blogs/consultation.jpg",
   },
   {
-    slug: "stomach-issues-home-care",
-    title: "Common Stomach Issues: Home Care Tips",
-    urduTitle: "پیٹ کے عام مسائل: گھریلو دیکھ بھال کے مشورے",
+    slug: "fever-is-it-really-a-bad-thing",
+    title: "Fever: Is it really a bad thing",
+
     excerpt:
-      "Practical, safe steps for managing mild stomach discomfort before it needs a clinic visit.",
-    urduExcerpt:
-      "کلینک جانے سے پہلے ہلکے پیٹ کے مسائل کو سنبھالنے کے محفوظ اور عملی طریقے۔",
-    date: "2026-04-30",
-    image: "/blogs/stomach",
+      "Should you fight fever every time you catch it? Learn when to let it be and when to seek medical attention.",
+
+    date: "2026-08-17",
   },
 ];
 
@@ -76,8 +74,6 @@ export default function Blogs() {
               href={`/blogs/${post.slug}`}
               className="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm transition-shadow hover:shadow-md"
             >
-              
-
               <div className="flex flex-1 flex-col gap-2 p-5">
                 <span className="text-xs font-medium uppercase tracking-wide text-slate-400">
                   {formatDate(post.date)}
