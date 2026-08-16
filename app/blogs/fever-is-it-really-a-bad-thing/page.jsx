@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
@@ -112,7 +113,12 @@ export default function Fever() {
             shivering, which produces heats. Your body contracts skin blood
             vessels to reduce heat loss. all this is to raise body temprature.
           </p>
-
+          <Image
+            src="https://lh3.googleusercontent.com/sitesv/AG8ngQXC9d-xxAYcHpe4cUE4rpLBOa7KNbtDUk8QGjTocInwyfMqzV52_r2EnRoPik9AT9bow2UnhXXfdeDHS-6qPA5K5FkEsoM0GHyMZXiMi9AWPTzfb7jxuJX5batESxnyeMTY7lMBqDgUAvFkcuIb0yL7okVUw3XRiE1At_Fe3hvzsaPMxQRcclmNWYojU68hz5Q7ZabunRnuDxikEzOBYR3I4_1MR6L3QDDnGd8P=w1280"
+            alt="Fever"
+            width={500}
+            height={300}
+          />
           <p>
             Fever or high temperature is one of the four signs of inflammation,
             the other one being redness, swelling, and pain
