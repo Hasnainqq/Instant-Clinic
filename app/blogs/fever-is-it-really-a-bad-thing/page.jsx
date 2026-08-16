@@ -118,6 +118,7 @@ export default function Fever() {
             alt="Fever"
             width={500}
             height={300}
+            unoptimized
           />
           <p>
             Fever or high temperature is one of the four signs of inflammation,
