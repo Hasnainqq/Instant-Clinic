@@ -11,10 +11,10 @@ const urduFont = Noto_Nastaliq_Urdu({
 });
 
 export const metadata = {
-    title: 'Dr. Hasnain Sikander | Instant Online Doctor Consultation Pakistan',
-    description: '  "Consult an MBBS doctor online for fever, cough, sore throat, diarrhea, GERD and common illnesses via Google Meet.',
+    title: 'Dr. Hasnain Sikander | Online Doctor Consultation Pakistan',
+    description: '  "Consult with Dr. Hasnain Sikander, an experienced online doctor in Pakistan.',
     keywords: [
-        "instant online doctor consultation",
+        " online doctor consultation",
         "doctor online pakistan",
         "telemedicine pakistan",
         "online doctor",

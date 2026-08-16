@@ -36,15 +36,15 @@ const illnessesUrdu = [
 const reasons = [
     {
         title: 'Instant online consultation',
-        text: 'No waiting around — get medical advice quickly through a simple online visit.'
+        text: 'Connect to a online doctor within 60 seconds. Yes, it is that fast!'
     },
     {
-        title: 'Accessible to everyone',
+        title: 'Accessible',
         text: 'Easy access for patients who need professional support from the comfort of home.'
     },
     {
-        title: 'Cheaper',
-        text: 'Affordable consultation options make quality care more accessible.'
+        title: 'Affordable',
+        text: 'Cost-effective healthcare solutions for everyone.'
     }
 ];
 
@@ -58,11 +58,11 @@ export default function Home() {
                     <div className="flex flex-col justify-center">
                         <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-blue-600">Online Doctor Consultation</p>
                         <h1 className="mb-3 text-4xl font-bold leading-tight sm:text-5xl">Dr. Hasnain Sikander</h1>
-                        <p className="mb-3 text-lg font-semibold text-blue-700">MBBS • RMP</p>
+                        <p className="mb-3 text-lg font-semibold text-blue-700">MBBS • PMDC Licensed</p>
                         <h2 className="urdu-text mb-3 text-4xl font-bold leading-tight sm:text-5xl rtl:text-right my-4">ڈاکٹر حسنین سکندر</h2>
                         <p className="urdu-text mb-3 text-base font-semibold text-blue-700 mt-3">ایم بی بی ایس • آر ایم پی</p>
                         <p className="max-w-2xl text-lg text-slate-600">
-                            Get trusted medical guidance for everyday health concerns through fast, simple online care.
+                            Get online clinical consultation via whatsapp
                         </p>
                         <a href="https://wa.me/923117907036" target="_blank" rel="noreferrer" className="mt-6  rounded-full bg-green-600 px-6 py-3 font-semibold text-white transition hover:bg-green-700 w-fit">
                             Consult Now / <span className="urdu-text">ابھی رابطہ کریں</span>
@@ -82,7 +82,7 @@ export default function Home() {
 
             <section className="py-16">
                 <div className="mx-auto max-w-6xl px-4 lg:px-6">
-                    <h2 className="mb-6 text-3xl font-semibold">We Treat</h2>
+                    <h2 className="mb-6 text-3xl font-semibold">Expertise</h2>
                     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                         {illnesses.map((item, index) => (
                             <div key={item} className="rounded-2xl border border-slate-200 bg-white px-5 py-4 text-base font-medium text-slate-700 shadow-sm">
@@ -98,7 +98,7 @@ export default function Home() {
                 <div className="mx-auto max-w-6xl px-4 lg:px-6">
                     <div className="mb-8">
                         <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-blue-600">Qualifications</p>
-                        <h2 className="mb-4 text-3xl font-semibold">Qualified, and Licensed <span className='urdu-text'>لائسنس یافتہ</span></h2>
+                        <h2 className="mb-4 text-3xl font-semibold">Qualified, and Licensed <span className='urdu-text'> لائسنس یافتہ</span></h2>
                         <p className="text-lg text-slate-600">
                             Dr. Hasnain Sikander holds an MBBS degree and a permanent PMDC license.
                         </p>
@@ -171,8 +171,8 @@ export default function Home() {
                             <div className="flex items-start gap-4">
                                 <span className="flex h-9 w-9 items-center justify-center rounded-full bg-blue-600 font-semibold text-white">3</span>
                                 <div>
-                                    <p className="text-slate-700"><strong>Receive your Google Meet link and join the consultation.</strong></p>
-                                    <p className="urdu-text mt-1 text-sm text-slate-500">اپنا گوگل میٹ لنک حاصل کریں اور مشاورت میں شامل ہوں۔</p>
+                                    <p className="text-slate-700"><strong>Get connected with the doctor. That's it!</strong></p>
+                                    <p className="urdu-text mt-1 text-sm text-slate-500">ڈاکٹر سے رابطہ حاصل کریں۔ </p>
                                 </div>
                             </div>
                         </li>
