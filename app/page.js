@@ -35,16 +35,13 @@ const illnessesUrdu = [
 
 const reasons = [
     {
-        title: 'Instant online consultation',
-        text: 'Connect to a online doctor within 60 seconds. Yes, it is that fast!'
+        title: 'Convenient',
+        text: 'Connect to a online doctor via whatsapp from the comfort of your home, without the need to travel.'
     },
+
     {
-        title: 'Accessible',
+        title: 'Comprehensive Care',
         text: 'Easy access for patients who need professional support from the comfort of home.'
-    },
-    {
-        title: 'Affordable',
-        text: 'Cost-effective healthcare solutions for everyone.'
     }
 ];
 
