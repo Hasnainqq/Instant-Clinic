@@ -11,7 +11,7 @@ const urduFont = Noto_Nastaliq_Urdu({
 });
 
 export const metadata = {
-    title: 'Dr. Hasnain Sikander | Online Doctor Consultation Pakistan',
+    title: 'Dr. Hasnain Sikander - General Physician | Online Doctor Consultation in Pakistan ',
     description: '  "Consult with Dr. Hasnain Sikander, an experienced online doctor in Pakistan.',
     keywords: [
         " online doctor consultation",
