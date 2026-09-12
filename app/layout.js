@@ -9,6 +9,7 @@ const urduFont = Noto_Nastaliq_Urdu({
     weight: ['400', '700'],
     variable: '--font-urdu'
 });
+import { WhatsappLink } from './page';
 
 export const metadata = {
     title: 'Dr. Hasnain Sikander - General Physician | Online Doctor Consultation in Pakistan ',
@@ -31,7 +32,7 @@ export default function RootLayout({ children }) {
             <body className={`${inter.className} ${urduFont.variable}`}>
                 <Navbar />
                 {children}
-                <Floating />
+                <Floating href={WhatsappLink} />
                 <Footer />
             </body>
         </html>
