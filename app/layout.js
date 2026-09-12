@@ -14,6 +14,10 @@ import { WhatsappLink } from './page';
 export const metadata = {
     title: 'Dr. Hasnain Sikander - General Physician | Online Doctor Consultation in Pakistan ',
     description: '  "Consult with Dr. Hasnain Sikander, an experienced online doctor in Pakistan.',
+    icons: {
+        icon: '/favicon.ico',
+        apple: '/apple-icon.png',
+    },
     keywords: [
         " online doctor consultation",
         "doctor online pakistan",
