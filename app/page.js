@@ -163,7 +163,7 @@ export default function Home() {
                                 <span className="flex h-9 w-9 items-center justify-center rounded-full bg-blue-600 font-semibold text-white">2</span>
                                 <div>
                                     <p className="text-slate-700"><strong>Send your screenshot to this number:</strong> 0311-907036</p>
-                                    <p className="urdu-text mt-1 text-sm text-slate-500">اپنا اسکرین شاٹ اس نمبر پر بھیج دیں: 0311-907036</p>
+                                    <p className="urdu-text mt-1 text-sm text-slate-500">اپنا اسکرین شاٹ اس نمبر پر بھیج دیں</p>
                                 </div>
                             </div>
                         </li>
