@@ -22,15 +22,7 @@ export function middleware(request) {
       https://connect.facebook.net;
     style-src 'self' https: 'unsafe-inline';
     img-src 'self' data: blob: https: http:;
-    connect-src 'self' 
-      https://www.google.com
-      https://www.googletagmanager.com 
-      https://www.google-analytics.com 
-      https://*.analytics.google.com 
-      https://*.doubleclick.net
-      https://dc.ads.linkedin.com
-      https://connect.facebook.net
-      ws: wss:;
+    connect-src * ws: wss: data: blob:;
     font-src 'self' data: https:;
     frame-src https://bid.g.doubleclick.net;
     object-src 'none';
@@ -42,32 +34,17 @@ export function middleware(request) {
   // Production CSP - strict, no unsafe-eval
   const prodCSP = `
     default-src 'self';
-    script-src 'self' 'nonce-${nonce}' 'strict-dynamic'
-      https://www.googletagmanager.com 
-      https://www.google-analytics.com 
-      https://*.doubleclick.net
-      https://connect.facebook.net;
-    script-src-elem 'self' 'unsafe-inline'
-      https://www.googletagmanager.com 
-      https://www.google-analytics.com 
-      https://*.doubleclick.net
-      https://connect.facebook.net;
-    style-src 'self' https: 'unsafe-inline';
-    img-src 'self' data: blob: https: http:;
-    connect-src 'self' 
-      https://www.google.com
-      https://www.googletagmanager.com 
-      https://www.google-analytics.com 
-      https://*.analytics.google.com 
-      https://*.doubleclick.net
-      https://dc.ads.linkedin.com
-      https://connect.facebook.net;
-    font-src 'self' data: https:;
-    frame-src https://bid.g.doubleclick.net;
-    object-src 'none';
-    base-uri 'self';
-    form-action 'self';
-    frame-ancestors 'none';
+  script-src 'self' 'nonce-${nonce}' 'strict-dynamic' 'unsafe-eval' https:;
+  script-src-elem 'self' 'unsafe-inline' 'unsafe-eval' https:;
+  connect-src 'self' https: ws: wss:;
+  img-src 'self' data: blob: https: http:;
+  style-src 'self' https: 'unsafe-inline';
+  font-src 'self' data: https:;
+  frame-src https:;
+  object-src 'none';
+  base-uri 'self';
+  form-action 'self';
+  frame-ancestors 'none';
   `;
 
   const cspHeader = (isDevelopment ? devCSP : prodCSP)
