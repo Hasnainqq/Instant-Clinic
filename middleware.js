@@ -13,12 +13,12 @@ export function middleware(request) {
     script-src 'self' 'nonce-${nonce}' 'strict-dynamic' 'unsafe-eval' 'unsafe-inline'
       https://www.googletagmanager.com 
       https://www.google-analytics.com 
-      https://googleads.g.doubleclick.net
+      https://*.doubleclick.net
       https://connect.facebook.net;
     script-src-elem 'self' 'unsafe-inline' 'unsafe-eval'
       https://www.googletagmanager.com 
       https://www.google-analytics.com 
-      https://googleads.g.doubleclick.net
+      https://*.doubleclick.net
       https://connect.facebook.net;
     style-src 'self' https: 'unsafe-inline';
     img-src 'self' data: blob: https: http:;
@@ -27,7 +27,7 @@ export function middleware(request) {
       https://www.googletagmanager.com 
       https://www.google-analytics.com 
       https://*.analytics.google.com 
-      https://googleads.g.doubleclick.net 
+      https://*.doubleclick.net
       https://dc.ads.linkedin.com
       https://connect.facebook.net
       ws: wss:;
@@ -45,12 +45,12 @@ export function middleware(request) {
     script-src 'self' 'nonce-${nonce}' 'strict-dynamic'
       https://www.googletagmanager.com 
       https://www.google-analytics.com 
-      https://googleads.g.doubleclick.net
+      https://*.doubleclick.net
       https://connect.facebook.net;
     script-src-elem 'self' 'unsafe-inline'
       https://www.googletagmanager.com 
       https://www.google-analytics.com 
-      https://googleads.g.doubleclick.net
+      https://*.doubleclick.net
       https://connect.facebook.net;
     style-src 'self' https: 'unsafe-inline';
     img-src 'self' data: blob: https: http:;
@@ -59,7 +59,7 @@ export function middleware(request) {
       https://www.googletagmanager.com 
       https://www.google-analytics.com 
       https://*.analytics.google.com 
-      https://googleads.g.doubleclick.net 
+      https://*.doubleclick.net
       https://dc.ads.linkedin.com
       https://connect.facebook.net;
     font-src 'self' data: https:;
