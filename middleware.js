@@ -17,6 +17,7 @@ export function middleware(request) {
       https://www.google-analytics.com 
       https://googleads.g.doubleclick.net
       https://connect.facebook.net;
+    style-src 'self' https: 'unsafe-inline';
     img-src 'self' data: blob: https: http:;
     connect-src 'self' 
       https://www.googletagmanager.com 
@@ -25,7 +26,6 @@ export function middleware(request) {
       https://googleads.g.doubleclick.net 
       https://dc.ads.linkedin.com
       https://connect.facebook.net;
-    style-src 'self' 'nonce-${nonce}' https: 'unsafe-inline';
     font-src 'self' data: https:;
     frame-src https://bid.g.doubleclick.net;
     object-src 'none';
