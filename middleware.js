@@ -24,7 +24,7 @@ export function middleware(request) {
     img-src 'self' data: blob: https: http:;
     connect-src * ws: wss: data: blob:;
     font-src 'self' data: https:;
-    frame-src https://bid.g.doubleclick.net;
+    frame-src https:;
     object-src 'none';
     base-uri 'self';
     form-action 'self';
