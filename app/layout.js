@@ -32,7 +32,9 @@ export const metadata = {
 };
 
 export default async function RootLayout({ children }) {
-    const nonce = (await headers()).get('x-nonce') || '';
+    const headersList = await headers();
+    const nonce = headersList.get("x-nonce") || "";
+
 
     return (
         <html lang="en">
@@ -43,16 +45,21 @@ export default async function RootLayout({ children }) {
                     strategy="afterInteractive"
                     nonce={nonce}
                 />
-                <Script id="google-ads-gtag" strategy="afterInteractive"
+                <Script
+                    id="gtag-config"
+                    strategy="afterInteractive"
                     nonce={nonce}
-                >
-                    {`
-                        window.dataLayer = window.dataLayer || [];
-                        function gtag(){dataLayer.push(arguments);}
-                        gtag('js', new Date());
-                        gtag('config', 'AW-11062936395');
-                    `}
-                </Script>
+                    dangerouslySetInnerHTML={{
+                        __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-11062936395', {
+                'page_path': window.location.pathname
+              });
+            `,
+                    }}
+                />
                 <Navbar />
                 {children}
                 <Floating href={WhatsappLink} />
