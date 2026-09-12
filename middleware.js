@@ -15,7 +15,7 @@ export function middleware(request) {
       https://www.google-analytics.com 
       https://googleads.g.doubleclick.net
       https://connect.facebook.net;
-    script-src-elem 'self' 'nonce-${nonce}' 'unsafe-eval' 'unsafe-inline'
+    script-src-elem 'self' 'unsafe-inline' 'unsafe-eval'
       https://www.googletagmanager.com 
       https://www.google-analytics.com 
       https://googleads.g.doubleclick.net
@@ -46,7 +46,7 @@ export function middleware(request) {
       https://www.google-analytics.com 
       https://googleads.g.doubleclick.net
       https://connect.facebook.net;
-    script-src-elem 'self' 'nonce-${nonce}' 'unsafe-inline'
+    script-src-elem 'self' 'unsafe-inline'
       https://www.googletagmanager.com 
       https://www.google-analytics.com 
       https://googleads.g.doubleclick.net
