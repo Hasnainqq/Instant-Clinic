@@ -4,6 +4,7 @@ import { Inter, Noto_Nastaliq_Urdu } from 'next/font/google';
 import Footer from './components/footer';
 import Floating from './components/floating';
 import Script from 'next/script';
+import { headers } from 'next/headers';
 const inter = Inter({ subsets: ['latin'] });
 const urduFont = Noto_Nastaliq_Urdu({
     subsets: ['arabic'],
@@ -30,7 +31,9 @@ export const metadata = {
     ]
 };
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
+    const nonce = (await headers()).get('x-nonce') || '';
+
     return (
         <html lang="en">
 
@@ -38,8 +41,11 @@ export default function RootLayout({ children }) {
                 <Script
                     src="https://www.googletagmanager.com/gtag/js?id=AW-11062936395"
                     strategy="afterInteractive"
+                    nonce={nonce}
                 />
-                <Script id="google-ads-gtag" strategy="afterInteractive">
+                <Script id="google-ads-gtag" strategy="afterInteractive"
+                    nonce={nonce}
+                >
                     {`
                         window.dataLayer = window.dataLayer || [];
                         function gtag(){dataLayer.push(arguments);}
