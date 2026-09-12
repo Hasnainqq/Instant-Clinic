@@ -46,6 +46,11 @@ export default async function RootLayout({ children }) {
                     nonce={nonce}
                 />
                 <Script
+                    src="https://www.googletagmanager.com/gtag/js?id=G-W0WE8B4HS1"
+                    strategy="afterInteractive"
+                    nonce={nonce}
+                />
+                <Script
                     id="gtag-config"
                     strategy="afterInteractive"
                     nonce={nonce}
@@ -57,6 +62,7 @@ export default async function RootLayout({ children }) {
               gtag('config', 'AW-11062936395', {
                 'page_path': window.location.pathname
               });
+                            gtag('config', 'G-W0WE8B4HS1');
             `,
                     }}
                 />
