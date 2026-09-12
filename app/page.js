@@ -6,6 +6,9 @@ import pmdc from '../assets/pmdc-license.jpg';
 import Faqs from "./components/faqs";
 import Navbar from "./components/navbar";
 import ConsultCTA from "./components/cta";
+
+const checkupFee = 1000; // Updated fee to 1000
+
 const illnesses = [
     'Sore throat ',
     'Tonsillitis ',
@@ -125,7 +128,7 @@ export default function Home() {
 
             <section className="py-16">
                 <div className="mx-auto max-w-6xl px-4 lg:px-6">
-                    <h2 className="mb-8 text-3xl font-semibold">Why Choose Dr. Hasnain Sikander</h2>
+                    <h2 className="mb-8 text-3xl font-semibold">Why Choose Dr. Hasnain Sikander online clinic?</h2>
                     <div className="grid gap-5 md:grid-cols-3">
                         {reasons.map((reason, index) => (
                             <article key={reason.title} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-md shadow-slate-200/70">
@@ -150,8 +153,8 @@ export default function Home() {
                             <div className="flex items-start gap-4">
                                 <span className="flex h-9 w-9 items-center justify-center rounded-full bg-blue-600 font-semibold text-white">1</span>
                                 <div>
-                                    <p className="text-slate-700"><strong>Pay via Easypaisa (Account: 0347-907036):</strong> 200</p>
-                                    <p className="urdu-text mt-1 text-sm text-slate-500">ادائیگی ایزی پیسے سے کریں: 200</p>
+                                    <p className="text-slate-700"><strong>Pay via Easypaisa (Account: 0347-907036):</strong> {checkupFee}</p>
+                                    <p className="urdu-text mt-1 text-sm text-slate-500">ادائیگی ایزی پیسے سے کریں: {checkupFee}</p>
                                 </div>
                             </div>
                         </li>
@@ -160,7 +163,7 @@ export default function Home() {
                                 <span className="flex h-9 w-9 items-center justify-center rounded-full bg-blue-600 font-semibold text-white">2</span>
                                 <div>
                                     <p className="text-slate-700"><strong>Send your screenshot to this number:</strong> 0311-907036</p>
-                                    <p className="urdu-text mt-1 text-sm text-slate-500">اپنا اسکرین شاٹ اس نمبر پر بھیج دیں: </p>
+                                    <p className="urdu-text mt-1 text-sm text-slate-500">اپنا اسکرین شاٹ اس نمبر پر بھیج دیں: 0311-907036</p>
                                 </div>
                             </div>
                         </li>
