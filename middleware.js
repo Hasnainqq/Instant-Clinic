@@ -23,6 +23,7 @@ export function middleware(request) {
     style-src 'self' https: 'unsafe-inline';
     img-src 'self' data: blob: https: http:;
     connect-src 'self' 
+      https://www.google.com
       https://www.googletagmanager.com 
       https://www.google-analytics.com 
       https://*.analytics.google.com 
@@ -54,6 +55,7 @@ export function middleware(request) {
     style-src 'self' https: 'unsafe-inline';
     img-src 'self' data: blob: https: http:;
     connect-src 'self' 
+      https://www.google.com
       https://www.googletagmanager.com 
       https://www.google-analytics.com 
       https://*.analytics.google.com 
