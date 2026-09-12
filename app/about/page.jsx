@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import img from "../../assets/dr-hasnain-sikander-online-consultation.png";
-
+import ConsultCTA from "../components/cta";
+import { WhatsappLink } from "../page";
 const education = [
   {
     year: "2025",
@@ -177,25 +178,8 @@ export default function AboutMe() {
           </div>
         </div>
 
-        {/* CTA */}
-        <div className="rounded-2xl bg-blue-600 p-8 text-center text-white">
-          <h2 className="text-2xl font-semibold">
-            Have a health concern you&apos;d like to discuss?
-          </h2>
-          <h2
-            dir="rtl"
-            lang="ur"
-            className="urdu-text mt-2 text-xl font-semibold"
-          >
-            کیا آپ کسی صحت کے مسئلے پر بات کرنا چاہتے ہیں؟
-          </h2>
-          <Link
-            href="/consult"
-            className="mt-6 inline-block rounded-full bg-white px-6 py-3 text-sm font-semibold text-blue-700 shadow-sm transition-colors hover:bg-blue-50"
-          >
-            Consult Now
-          </Link>
-        </div>
+        {/* CTA }*/}
+        <ConsultCTA href={WhatsappLink} />
       </div>
     </section>
   );

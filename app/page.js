@@ -7,7 +7,8 @@ import Faqs from "./components/faqs";
 import Navbar from "./components/navbar";
 import ConsultCTA from "./components/cta";
 
-const checkupFee = 1000; // Updated fee to 1000
+export const checkupFee = 1000;
+export const WhatsappLink = "https://wa.me/923117907036";
 
 const illnesses = [
     'Sore throat ',
@@ -64,7 +65,7 @@ export default function Home() {
                         <p className="max-w-2xl text-lg text-slate-600">
                             Get online clinical consultation via whatsapp
                         </p>
-                        <a href="https://wa.me/923117907036" target="_blank" rel="noreferrer" className="mt-6  rounded-full bg-green-600 px-6 py-3 font-semibold text-white transition hover:bg-green-700 w-fit">
+                        <a href={WhatsappLink} target="_blank" rel="noreferrer" className="mt-6  rounded-full bg-green-600 px-6 py-3 font-semibold text-white transition hover:bg-green-700 w-fit">
                             Consult Now / <span className="urdu-text">ابھی رابطہ کریں</span>
                         </a>
                     </div>
@@ -183,7 +184,7 @@ export default function Home() {
 
             <ConsultCTA
 
-                href="https://wa.me/923117907036"
+                href={WhatsappLink}
             />
             <Faqs />
 
