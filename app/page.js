@@ -7,7 +7,7 @@ import Faqs from "./components/faqs";
 import Navbar from "./components/navbar";
 import ConsultCTA from "./components/cta";
 
-export const checkupFee = 1000;
+export const checkupFee = 500;
 export const WhatsappLink = "https://wa.me/923117907036";
 
 const illnesses = [
