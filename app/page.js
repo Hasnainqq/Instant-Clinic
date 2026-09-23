@@ -4,7 +4,7 @@ import img from '../assets/dr-hasnain-sikander-online-consultation.png';
 import mbbs from '../assets/mbbs-degree.jpg';
 import pmdc from '../assets/pmdc-license.jpg';
 import Faqs from "./components/faqs";
-import Navbar from "./components/navbar";
+
 import ConsultCTA from "./components/cta";
 
 export const checkupFee = 500;
